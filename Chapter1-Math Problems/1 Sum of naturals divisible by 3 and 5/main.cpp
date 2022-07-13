@@ -34,15 +34,15 @@ using namespace std;
 int main()
 {
     unsigned int limit = 0;
-    cout << "Upper limit:";
+    cout << "Ingrese el limite para realizar el calculo: ";
     cin >> limit;
-    unsigned long long sum = 0;
+    unsigned long long result = 0;
     for (unsigned int i = 3; i < limit; ++i)
     {
         if (i % 3 == 0 || i % 5 == 0)
-        sum += i;
+            result+= i;
     }
-    cout << "sum=" << sum << endl;
+    cout << "la suma de todos los numeros naturales divisibles por 3 o 5 es: " << result << endl;
 
     getch();
     return 0;
